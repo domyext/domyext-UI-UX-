@@ -1,8 +1,8 @@
 .burger {
     cursor: pointer;
     width: 30px; 
-    margin: 30px auto;
-    margin-right: 0px;
+    margin: 20px auto;
+    margin-left: 170px;
 }
 
 .burger span {
