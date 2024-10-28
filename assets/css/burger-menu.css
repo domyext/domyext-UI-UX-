@@ -2,6 +2,7 @@
     cursor: pointer;
     width: 30px; 
     margin: 30px auto;
+    margin-right: 0px;
 }
 
 .burger span {
