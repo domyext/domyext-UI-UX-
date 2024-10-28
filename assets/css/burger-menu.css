@@ -19,3 +19,8 @@
 .burger.open span:nth-child(2) {
     opacity: 0;
 }
+
+.burger.open span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 9px; 
+}
