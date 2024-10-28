@@ -24,3 +24,8 @@
     transform: rotate(45deg);
     top: 9px; 
 }
+
+.burger.open span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: -9px; 
+}
