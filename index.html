@@ -3,52 +3,64 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Domyext | Desain Resource</title>
+    <title>Domyext | Design Resource</title>
     <link rel="shortcut icon" href="https://domy.buxxed.me/assets/img/logo.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/2ff8362c80.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/burger-menu.css">
 </head>
-<body class="bg-gray-100 overflow-hidden">
-    <img src="https://raw.githubusercontent.com/domyext/domyext.github.io/refs/heads/main/assets/img/theme.webp" alt="Theme Image" class="w-screen h-screen object-cover">
-
-    <section class="fixed top-0 left-0 w-full flex items-center bg-gray-700 bg-opacity-50 backdrop-blur-md py-2 z-10">
-        <img src="https://domy.buxxed.me/assets/img/logo.png" alt="Logo" class="w-16 h-auto ml-4 mr-1 sm:w-20">
-        <span class="text-white text-2xl mr-2 font-bold">
-            <em>domyext</em>
-        </span>
-        
-        <nav class="hidden md:flex ml-auto mr-8 text-white">
-            <a href="#" class="text-white no-underline ml-8 text-base transition-colors duration-300 hover:text-purple-600">Home</a>
-            <a href="#" class="text-white no-underline ml-8 text-base transition-colors duration-300 hover:text-purple-600">About</a>
-            <a href="#" class="text-white no-underline ml-8 text-base transition-colors duration-300 hover:text-purple-600">Design</a>
-            <a href="#" class="text-white no-underline ml-8 text-base transition-colors duration-300 hover:text-purple-600">Contact</a>
-        </nav>
-
-        <div class="burger ml-auto mr-4 md:hidden">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>  
-    </section> 
-
-    <div class="hidden absolute top-20 left-0 w-full bg-gray-700 bg-opacity-90 rounded-b-lg shadow-lg p-4 z-20 md:hidden text-center" id="dropdown-menu">
-        <a href="#" class="block text-white no-underline mb-4 text-base transition-colors duration-300 hover:text-purple-600">Home</a>
-        <a href="#" class="block text-white no-underline mb-4 text-base transition-colors duration-300 hover:text-purple-600">About</a>
-        <a href="#" class="block text-white no-underline mb-4 text-base transition-colors duration-300 hover:text-purple-600">Design</a>
-        <a href="#" class="block text-white no-underline text-base transition-colors duration-300 hover:text-purple-600">Contact</a>
+<body class="bg-gray-100 h-screen overflow-auto">
+    <div class="fixed inset-0">
+        <img src="https://raw.githubusercontent.com/domyext/domyext.github.io/refs/heads/main/assets/img/theme.webp" alt="Theme Image" class="w-full h-full object-cover">
     </div>
+    <!-- Navbar Section with Relative Position -->
+<section class="relative w-full flex items-center bg-gray-700 bg-opacity-50 backdrop-blur-md py-2 z-10">
+    <img src="https://domy.buxxed.me/assets/img/logo.png" alt="Logo" class="w-16 h-auto ml-4 mr-1 sm:w-20">
+    <span class="text-white text-2xl mr-2 font-bold">
+        <em>domyext</em>
+    </span>
+    
+    <nav class="hidden md:flex ml-auto mr-8 text-white">
+        <a href="#" class="text-white no-underline ml-8 text-base transition-colors duration-300 hover:text-purple-600">Home</a>
+        <a href="#" class="text-white no-underline ml-8 text-base transition-colors duration-300 hover:text-purple-600">About</a>
+        <a href="#" class="text-white no-underline ml-8 text-base transition-colors duration-300 hover:text-purple-600">Design</a>
+        <a href="#" class="text-white no-underline ml-8 text-base transition-colors duration-300 hover:text-purple-600">Contact</a>
+    </nav>
 
-    <div class="absolute top-1/2 md:left-1/2 md:transform md:-translate-x-1/2 -translate-y-1/2 z-10 px-4 w-full md:w-auto">
-        <h1 class="mb-4 text-4xl ml-4 sm:ml-0 sm:text-5xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl leading-tight text-left md:text-center">
-            <span class="text-transparent bg-clip-text bg-gradient-to-r to-purple-600 from-sky-400">Welcome to</span> Domyext Design Resource.
-        </h1>
-        <div class="flex -ml-52 sm:ml-0 justify-center">
-            <a href="https://drive.google.com/drive/folders/1jfrnqp7LTU4pPdCfYLsnkdBSq21vZtvG?usp=sharing" target="_blank" class="inline-block px-4 py-2 mt-4 text-base font-semibold text-white bg-gradient-to-r to-purple-600 from-sky-400 rounded-lg shadow-md focus:outline-none sm:px-6 sm:py-3 sm:text-lg">
-                Get Started
-            </a>
-        </div>                
-    </div>    
+    <div class="burger ml-auto mr-4 md:hidden">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>     
+
+</section> 
+
+ <!-- Dropdown for Mobile Menu -->
+ <div class="hidden absolute top-20 left-0 w-full bg-gray-700 bg-opacity-90 rounded-b-lg shadow-lg p-4 z-20 md:hidden text-center" id="dropdown-menu">
+    <a href="#" class="block text-white no-underline mb-4 text-base transition-colors duration-300 hover:text-purple-600">Home</a>
+    <a href="#" class="block text-white no-underline mb-4 text-base transition-colors duration-300 hover:text-purple-600">About</a>
+    <a href="#" class="block text-white no-underline mb-4 text-base transition-colors duration-300 hover:text-purple-600">Design</a>
+    <a href="#" class="block text-white no-underline text-base transition-colors duration-300 hover:text-purple-600">Contact</a>
+</div>
+
+<!-- Main Content Section -->
+<section class="relative w-full flex items-center py-2 z-10 mb-48">
+    <div class="relative z-10 flex flex-col items-center mt-32 p-4 w-screen space-y-12">
+        <div class="w-full flex justify-center -mt-24 mb-32">
+            <img src="https://domy.buxxed.me/assets/img/logo.png" alt="" class="w-32 sm:w-44 sm:mr-0 mr-52 h-auto">
+        </div>
+        <div class="absolute top-1/2 md:left-1/2 md:transform md:-translate-x-1/2 -translate-y-1/2 z-10 px-4 w-full md:w-auto">
+            <h1 class="mb-4 mt-4 text-4xl ml-4 sm:ml-0 sm:text-5xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl leading-tight text-left md:text-center">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r to-purple-600 from-sky-400">Welcome to</span> Domyext Design Resource.
+            </h1>
+            <div class="flex -ml-52 sm:ml-0 justify-center">
+                <a href="https://drive.google.com/drive/folders/1jfrnqp7LTU4pPdCfYLsnkdBSq21vZtvG?usp=sharing" target="_blank" class="inline-block px-4 py-2 mt-4 text-base font-semibold text-white bg-gradient-to-r to-purple-600 from-sky-400 rounded-lg shadow-md focus:outline-none sm:px-6 sm:py-3 sm:text-lg">
+                    Get Started
+                </a>
+            </div>               
+        </div>  
+    </div>  
+</section>
 
     <script src="assets/js/burger-menu.js"></script>
 </body>
